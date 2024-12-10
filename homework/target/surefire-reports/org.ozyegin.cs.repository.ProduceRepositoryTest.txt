@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.ozyegin.cs.repository.ProduceRepositoryTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.426 s <<< FAILURE! - in org.ozyegin.cs.repository.ProduceRepositoryTest
-org.ozyegin.cs.repository.ProduceRepositoryTest.produceDelete  Time elapsed: 0.087 s  <<< ERROR!
-java.lang.Exception: Produce Delete is failed!
-	at org.ozyegin.cs.repository.ProduceRepositoryTest.produceDelete(ProduceRepositoryTest.java:45)
-
