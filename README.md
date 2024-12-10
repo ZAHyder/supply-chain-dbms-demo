@@ -1,4 +1,3 @@
-#Homework 1
 In homework 1, we are going to design a system to manage supply-chain of customer companies.
 Some classes will already be provided with the desired methods. 
 You need to implement all functionalities listed in Requirements section.
