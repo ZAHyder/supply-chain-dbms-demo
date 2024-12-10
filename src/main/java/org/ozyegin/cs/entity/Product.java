@@ -11,20 +11,13 @@ public class Product {
   public int getId() {
     return id;
   }
-  public Product id(int id) {
-    this.id = id;
-    return this;
-  }
+
   public void setId(int id) {
     this.id = id;
   }
 
   public String getName() {
     return name;
-  }
-  public Product name(String name) {
-    this.name = name;
-    return this;
   }
 
   public void setName(String name) {
@@ -34,10 +27,6 @@ public class Product {
   public String getDescription() {
     return description;
   }
-  public Product description(String description) {
-    this.description = description;
-    return this;
-  }
 
   public void setDescription(String description) {
     this.description = description;
@@ -45,10 +34,6 @@ public class Product {
 
   public String getBrandName() {
     return brandName;
-  }
-  public Product brandName(String brandName) {
-    this.brandName = brandName;
-    return this;
   }
 
   public void setBrandName(String brandName) {

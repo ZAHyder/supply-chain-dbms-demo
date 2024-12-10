@@ -79,7 +79,7 @@ public class SampleRepository extends JdbcDaoSupport {
   public void delete(int id) throws Exception {
     if (Objects.requireNonNull(getJdbcTemplate()).update(deletePS,
         id) != 1) {
-      throw new Exception("Sample Delete is failed!");
+      throw new Exception("Sample Update is failed!");
     }
   }
 

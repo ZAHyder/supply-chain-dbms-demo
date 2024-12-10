@@ -1,3 +1,4 @@
+#Homework 1
 In homework 1, we are going to design a system to manage supply-chain of customer companies.
 Some classes will already be provided with the desired methods. 
 You need to implement all functionalities listed in Requirements section.
@@ -19,6 +20,12 @@ Requirements
 5. A company has a capacity to produce a product. If the ordered transaction amounts are more than the production capacity, the order should not be accepted.
 6. The system accepts orders for products and send them to companies. Each order has an amount and order date information.
   * If the total active orders exceed the production capacity of company, it should automatically be rejected.
+=========== Homework 2 ===================
+7. When the ordered amount of product is shipped by the company, the order is deleted from active orders, but the transaction information is not lost. The old transaction information should be stored in transaction_history for further analysis.
+ * (Query1) The system shall track the list of product IDs ordered the most for each company.
+ * (Query2) The system shall track the inactive companies (i.e., their name) for a given time period. E.g., the companies which does not have any order between given two dates.
+8. The system shall implement the predetermined REST calls. Please see controller package for further information.
+ * ALL REST CALLS MUST BE TRANSACTIONAL. PLEASE MAKE SURE THAT ACID PROPERTIES ARE SATISFIED!
 
 Grading
 =======

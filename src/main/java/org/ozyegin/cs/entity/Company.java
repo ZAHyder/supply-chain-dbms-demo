@@ -19,20 +19,13 @@ public class Company {
   public void setName(String name) {
     this.name = name;
   }
-  public Company name(String name) {
-    this.name = name;
-    return this;
-  }
+
   public int getZip() {
     return zip;
   }
 
   public void setZip(int zip) {
     this.zip = zip;
-  }
-  public Company zip(int zip) {
-    this.zip = zip;
-    return this;
   }
 
   public String getCountry() {
@@ -42,10 +35,6 @@ public class Company {
   public void setCountry(String country) {
     this.country = country;
   }
-  public Company country(String country) {
-    this.country = country;
-    return this;
-  }
 
   public String getCity() {
     return city;
@@ -54,11 +43,6 @@ public class Company {
   public void setCity(String city) {
     this.city = city;
   }
-  public Company city(String city) {
-    this.city = city;
-    return this;
-  }
-
 
   public String getStreetInfo() {
     return streetInfo;
@@ -67,11 +51,6 @@ public class Company {
   public void setStreetInfo(String streetInfo) {
     this.streetInfo = streetInfo;
   }
-  public Company streetInfo(String streetInfo) {
-    this.streetInfo = streetInfo;
-    return this;
-  }
-
 
   public String getPhoneNumber() {
     return phoneNumber;
@@ -80,11 +59,6 @@ public class Company {
   public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
-  public Company phoneNumber(String phoneNumber) {
-    this.phoneNumber = phoneNumber;
-    return this;
-  }
-
 
   public List<String> getE_mails() {
     return e_mails;
@@ -93,11 +67,6 @@ public class Company {
   public void setE_mails(List<String> e_mails) {
     this.e_mails = e_mails;
   }
-  public Company e_mails(List<String> e_mails) {
-    this.e_mails = e_mails;
-    return this;
-  }
-
 
 
   @Override
@@ -116,17 +85,17 @@ public class Company {
     }
 
     return getZip() == company.getZip() &&
-            Objects.equal(getName(), company.getName()) &&
-            Objects.equal(getCountry(), company.getCountry()) &&
-            Objects.equal(getCity(), company.getCity()) &&
-            Objects.equal(getStreetInfo(), company.getStreetInfo()) &&
-            Objects.equal(getPhoneNumber(), company.getPhoneNumber()) &&
-            getE_mails().size() == company.getE_mails().size();
+        Objects.equal(getName(), company.getName()) &&
+        Objects.equal(getCountry(), company.getCountry()) &&
+        Objects.equal(getCity(), company.getCity()) &&
+        Objects.equal(getStreetInfo(), company.getStreetInfo()) &&
+        Objects.equal(getPhoneNumber(), company.getPhoneNumber()) &&
+        getE_mails().size() == company.getE_mails().size();
   }
 
   @Override
   public int hashCode() {
     return Objects
-            .hashCode(getName(), getZip(), getCountry(), getCity(), getStreetInfo(), getPhoneNumber());
+        .hashCode(getName(), getZip(), getCountry(), getCity(), getStreetInfo(), getPhoneNumber());
   }
 }
