@@ -1,6 +1,6 @@
 Project Description:
 ============
-In Part 1, we are going to design a system to manage supply-chain of customer companies.
+We are going to design a system to manage supply-chain of customer companies.
 Some classes will already be provided with the desired methods. 
 You need to implement all functionalities listed in Requirements section.
 This may require you to implement methods given in the template code, write new classes, methods and all necessary code.
@@ -21,9 +21,6 @@ Requirements
 5. A company has a capacity to produce a product. If the ordered transaction amounts are more than the production capacity, the order should not be accepted.
 6. The system accepts orders for products and send them to companies. Each order has an amount and order date information.
   * If the total active orders exceed the production capacity of company, it should automatically be rejected.
-
-Part 2
-==============================
 7. When the ordered amount of product is shipped by the company, the order is deleted from active orders, but the transaction information is not lost. The old transaction information should be stored in transaction_history for further analysis.
  * (Query1) The system shall track the list of product IDs ordered the most for each company.
  * (Query2) The system shall track the inactive companies (i.e., their name) for a given time period. E.g., the companies which does not have any order between given two dates.
