@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.ozyegin.cs.repository.CompanyRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.359 s <<< FAILURE! - in org.ozyegin.cs.repository.CompanyRepositoryTest
+org.ozyegin.cs.repository.CompanyRepositoryTest.find100  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.Exception: City values should be same
+	at org.ozyegin.cs.repository.CompanyRepositoryTest.find100(CompanyRepositoryTest.java:86)
+
