@@ -1,0 +1,12 @@
+org/ozyegin/cs/SqlConfig.class
+org/ozyegin/cs/entity/Company.class
+org/ozyegin/cs/repository/ProductRepository.class
+org/ozyegin/cs/repository/SampleRepository$1.class
+org/ozyegin/cs/entity/Product.class
+org/ozyegin/cs/entity/Sample.class
+org/ozyegin/cs/entity/Pair.class
+org/ozyegin/cs/repository/SampleRepository.class
+org/ozyegin/cs/repository/TransactionRepository.class
+org/ozyegin/cs/Homework.class
+org/ozyegin/cs/repository/CompanyRepository.class
+org/ozyegin/cs/repository/ProduceRepository.class

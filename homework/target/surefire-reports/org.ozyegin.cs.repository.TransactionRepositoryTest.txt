@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: org.ozyegin.cs.repository.TransactionRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.337 s <<< FAILURE! - in org.ozyegin.cs.repository.TransactionRepositoryTest
+org.ozyegin.cs.repository.TransactionRepositoryTest.orderCannotExceedCapacity2  Time elapsed: 0.039 s  <<< ERROR!
+org.springframework.dao.DuplicateKeyException: 
+PreparedStatementCallback; SQL [INSERT INTO transaction (name, id, amount, date) VALUES(?,?,?,?)]; ERROR: duplicate key value violates unique constraint "transaction_pkey"
+  Detail: Key (id, name)=(137, x6Urf765XRQ4Ec) already exists.; nested exception is org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "transaction_pkey"
+  Detail: Key (id, name)=(137, x6Urf765XRQ4Ec) already exists.
+	at org.ozyegin.cs.repository.TransactionRepositoryTest.orderCannotExceedCapacity2(TransactionRepositoryTest.java:84)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: duplicate key value violates unique constraint "transaction_pkey"
+  Detail: Key (id, name)=(137, x6Urf765XRQ4Ec) already exists.
+	at org.ozyegin.cs.repository.TransactionRepositoryTest.orderCannotExceedCapacity2(TransactionRepositoryTest.java:84)
+
+org.ozyegin.cs.repository.TransactionRepositoryTest.orderDelete  Time elapsed: 0.026 s  <<< ERROR!
+java.lang.Exception: Transaction delete is failed!
+	at org.ozyegin.cs.repository.TransactionRepositoryTest.orderDelete(TransactionRepositoryTest.java:53)
+
